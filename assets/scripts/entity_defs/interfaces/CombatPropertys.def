@@ -1,0 +1,104 @@
+<root>
+	<Properties>
+		<HP>
+			<Type>			HP				</Type>
+			<Utype>			47001				</Utype>
+			<Flags>			ALL_CLIENTS			</Flags>
+			<Persistent>	true					</Persistent> 
+			<Default>		0				</Default>
+		</HP>
+
+		<HP_Max>
+			<Type>			HP				</Type>
+			<Utype>			47002				</Utype>
+			<Flags>			ALL_CLIENTS			</Flags>
+			<Default>		0				</Default>
+		</HP_Max>
+
+		<MP>
+			<Type>			HP				</Type>
+			<Utype>			47003				</Utype>
+			<Flags>			ALL_CLIENTS			</Flags>
+			<Persistent>	true					</Persistent> 
+			<Default>		0				</Default>
+		</MP>
+
+		<MP_Max>
+			<Type>			HP				</Type>
+			<Utype>			47004				</Utype>
+			<Flags>			ALL_CLIENTS			</Flags>
+			<Default>		0				</Default>
+		</MP_Max>
+
+		<attack_Max>
+			<Type>			INT32				</Type>
+			<Flags>			OWN_CLIENT			</Flags>
+			<Default>		10				</Default>
+			<Persistent>	true					</Persistent> 
+		</attack_Max>
+		<attack_Min>
+			<Type>			INT32				</Type>
+			<Flags>			OWN_CLIENT			</Flags>
+			<Default>		0				</Default>
+			<Persistent>	true					</Persistent> 
+		</attack_Min>
+		<defence>
+			<Type>			INT32				</Type>
+			<Flags>			OWN_CLIENT			</Flags>
+			<Default>		0				</Default>
+			<Persistent>	true					</Persistent> 
+		</defence>
+		<rating>
+			<Type>			INT32				</Type>
+			<Flags>			OWN_CLIENT			</Flags>
+			<Default>		99				</Default>
+			<Persistent>	true					</Persistent> 
+		</rating>
+		<dodge>
+			<Type>			INT32				</Type>
+			<Flags>			OWN_CLIENT			</Flags>
+			<Default>		0				</Default>
+			<Persistent>	true				</Persistent> 
+		</dodge>
+
+	</Properties>
+
+	<CellMethods>
+		<addHP>
+			<Arg>			HP				</Arg>
+		</addHP>
+
+		<addMP>
+			<Arg>			MP				</Arg>
+		</addMP>
+
+		<addDefence>
+			<Arg>			INT32				</Arg>
+		</addDefence>
+
+		<addAttack_Max>
+			<Arg>			INT32				</Arg>
+		</addAttack_Max>
+
+		<addAttack_Min>
+			<Arg>			INT32				</Arg>
+		</addAttack_Min>
+
+		<setHP>
+			<Arg>			HP				</Arg>
+		</setHP>
+
+		<setMP>
+			<Arg>			MP				</Arg>
+		</setMP>
+
+		<setHPMax>
+			<Arg>			HP				</Arg>
+		</setHPMax>
+
+		<setMPMax>
+			<Arg>			MP				</Arg>
+		</setMPMax>
+	</CellMethods>
+</root>
+

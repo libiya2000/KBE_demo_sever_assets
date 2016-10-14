@@ -1,0 +1,71 @@
+<root>
+	<Properties>
+		
+		<TradeItemList>
+			<Type> ITEM_INFO_LIST </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</TradeItemList>
+		
+		<TradeTargetID>
+			<Type>  ENTITY_ID </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</TradeTargetID>
+		<TradeMoney>
+			<Type>  UINT64   </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</TradeMoney>
+		
+		<Tradelock>
+			<Type>  BOOL   </Type>
+			<Flags> ALL_CLIENTS </Flags>
+		</Tradelock>
+
+	
+	</Properties>
+
+	<CellMethods>
+		<reqBeginTrade>
+			<Arg>			ENTITY_ID			</Arg>
+			<Exposed/>
+		</reqBeginTrade>
+		
+		<BeCallToTrade>
+			<Arg>			ENTITY_ID			</Arg>
+		</BeCallToTrade>
+		
+		<reqLockTradeItem>
+			<Arg>			ITEM_INFO_LIST			</Arg>
+			<Arg> 			UINT64				</Arg>
+			<Exposed/>
+		</reqLockTradeItem>
+		
+		<reqLockTradeItem2>
+			<Arg> 			UINT64				</Arg>
+			<Exposed/>
+		</reqLockTradeItem2>
+		
+		<reqTrade>
+				<Exposed/>
+		</reqTrade>
+	</CellMethods>
+
+	<ClientMethods>
+		<OnreqTradeItemList>
+			<Arg>			ITEM_INFO_LIST			</Arg>
+			<Arg> 			UINT64				</Arg>
+			
+		</OnreqTradeItemList>
+		<OnreqTradeItemList2>
+			<Arg> 			UINT64				</Arg>
+			
+		</OnreqTradeItemList2>
+		<OnreqTradeDone>
+		</OnreqTradeDone>
+		
+		<IsTradeing>
+			<Arg>			ENTITY_ID			</Arg>	
+		</IsTradeing>
+		
+	</ClientMethods>
+</root>
+
